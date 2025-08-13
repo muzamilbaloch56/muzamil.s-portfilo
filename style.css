@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0 0 0 0;
+}
+html,body{
+  height: 100%;
+  background-image: linear-gradient(rgb(243, 250, 243),rgb(112, 112, 210),rgb(43, 43, 71),rgb(47, 109, 138));
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  padding-right: 0;
+}
+.main-heading{
+  display: flex;
+  justify-content: center;
+ 
+  align-items: center;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height: 80px;
+  width: 1000px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  background-image: linear-gradient(#87f3eb,#7d90fb,#87f3eb);
+}
+.inner-navbar{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 100px;
+}
+.navbar-outer{
+  justify-content: center;
+  align-items: center;
+}
+.main-content{
+  display: flex;
+  justify-content: center;
+
+}
+.hero-content{
+  display: flex;
+  border: 2PX solid black;
+  justify-content: center;
+  height: 450px;
+  width: 1000px;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: linear-gradient(#87f3eb,#7d90fb,#87f3eb,blue);
+} 
+.hero-img{
+  height: 250px;
+  width: 250PX;
+  border-radius: 20%;
+  margin-top: 30PX;
+  box-shadow: 0 0 10px 5px rgb(66, 66, 209);
+  background-size: cover;
+  transition: 0 0 0.5s;
+  transform: scale(0 1);
+}
+img{
+  height: 250px;
+  width: 250PX;
+  background-size: cover;
+  border-radius: 20%;
+}
+.hero-img:hover{
+  box-shadow: 0  0 5px 7px rgb(226, 45, 45);
+  font-weight: 800;
+  transition: 0.2s;
+  transform: scale(1.02);
+}
+.text{
+  height: 300px;
+  width: 600px;
+  margin-top:100px;
+  margin-left: 20px;
+}
+h1{
+  font-size: 50px;
+}
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-style: italic;
+}
+p{
+  margin-bottom: 10PX;
+  font-size: 20PX;
+}
+a:hover{
+  font-weight: 900;
+  font-size: 16px;
+  color: aliceblue;
+
+}
+.buttons{
+  height: 80px;
+  width: 300px;
+  display: flex;
+
+}
+.btn-one{
+  height: 55px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: black;
+  border-radius: 10px;
+  background-color:orange;
+  border: 2px solid black;
+}
+.btn-two{
+  height: 55px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color:black;
+  border-radius: 10px;
+  background-color:orange;
+  border: 2px solid black;
+}
+.buttons a{
+  font-size: 15px;
+  font-weight: 800;
+  font-weight: bold;
+}
+.btn-one:hover{
+  
+ background-color: orange;
+  box-shadow: 0  0 5px 7px orangered;
+ background-image: linear-gradient(rgb(104, 104, 207),rgb(108, 146, 108),rgb(123, 219, 219));
+  box-shadow: 0  0 5px 7px purple;
+  font-weight: 800;
+  transform: scale(1.02);
+  transition:0.2s;
+  color: aliceblue;
+  
+}
+.btn-two:hover{
+ background-color: orange;
+  box-shadow: 0  0 5px 7px orangered;
+ background-image: linear-gradient(rgb(80, 80, 185),rgb(108, 146, 108),rgb(123, 219, 219));
+  box-shadow: 0  0 5px 7px purple;
+  font-weight: 800;
+  transform: scale(1.02);
+  transition:0.2s;
+  color: aliceblue;
+}
+.click{ 
+  height: 55px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color:black;
+  border-radius: 10px;
+  background-color:orange;
+  border: 2px solid black;
+}
+.click:hover{ background-image: linear-gradient(rgb(104, 104, 207),rgb(108, 146, 108),rgb(123, 219, 219));
+  box-shadow: 0  0 5px 7px purple;
+  font-weight: 800;
+  transform: scale(1.02);
+  transition:0.2s;
+  color: aliceblue;
+
+}
+.download-botton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  background-color:rgb(165, 151, 231);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  font-weight: 900;
+  color: aliceblue;
+  background-color: rgb(230, 85, 85);
+}
+.download-botton:hover{
+   background-image:linear-gradient(rgb(104, 104, 207),rgb(108, 146, 108),rgb(123, 219, 219));
+  box-shadow: 0  0 5px 7px purple;
+  font-weight: 800;
+  transform: scale(1.02);
+  transition:0.2s;
+  color: aliceblue;
+}
+@media screen and (max-width:880px){
+  .navbar{
+    width: 800px;
+  }
+  .hero-content{
+    width: 800px;
+    height: 600px;
+  }
+  
+}
+@media screen and (max-width:770px){
+  .navbar{
+    width: 650px;
+  }
+  .hero-content{
+    width: 650px;
+  }
+  .text{
+    width: 500px;
+    /* margin: 0 0 0 0; */
+  }
+  .About-h1{
+    font-size: 40px;
+  }
+
+
+}
+@media screen and (max-width:500px){
+  .hero-content{
+    width: 451px;
+    height: 900px;
+  }
+  .About-h1{
+    font-size: 30px;
+    width: 200px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .text{
+  width: 200px;
+  margin-top: 80px;
+  }
+  .buttons{
+    flex-wrap: wrap;
+    width: 100px;
+    row-gap: 20px;
+  }
+  .download-botton{
+
+    margin-top: 150px;
+    margin-right: 150px;
+    width: 180px;
+  }
+  p{
+margin:0 0 0 0  }
+}
